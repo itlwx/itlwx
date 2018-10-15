@@ -33,16 +33,17 @@
         <zkclient.version>0.1</zkclient.version>
         <velocity>1.7</velocity>
         <velocity-tools>2.0</velocity-tools>
+        <mybatis-generator-core.version>1.3.2</mybatis-generator-core.version>
+        <aspectj.version>1.7.4</aspectj.version>
+        <cglib.version>2.2.2</cglib.version>
         <!--<httpclient.version>4.3.5</httpclient.version>-->
         <!-- <joda-time.version>2.5</joda-time.version>-->
-        <!-- <pagehelper.version>3.4.2-fix</pagehelper.version>-->
+        <pagehelper.version>4.2.1</pagehelper.version>
         <!--<jsqlparser.version>0.9.1</jsqlparser.version>-->
         <!--<solrj.version>4.10.3</solrj.version>-->
         <!--<activemq.version>5.11.2</activemq.version>-->
        <!-- <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>-->
-
-
     </properties>
 
     <dependencyManagement>
@@ -86,6 +87,22 @@
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis-spring</artifactId>
                 <version>${mybatis.spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.miemiedev</groupId>
+                <artifactId>mybatis-paginator</artifactId>
+                <version>${mybatis.paginator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+            <!-- mybatis自动生成代码 -->
+            <dependency>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-core</artifactId>
+                <version>${mybatis-generator-core.version}</version>
             </dependency>
             <!-- MySql -->
             <dependency>
@@ -170,6 +187,7 @@
                 <artifactId>commons-fileupload</artifactId>
                 <version>${commons-fileupload.version}</version>
             </dependency>
+
             <!-- dubbo相关 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -187,11 +205,30 @@
                 <version>${zkclient.version}</version>
             </dependency>
 
+
+            <!-- aop -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>../blog-web</module>
+        <module>../blog-service</module>
+        <module>../blog-service-impl</module>
     </modules>
 
 </project>
