@@ -1,3 +1,4 @@
+/*项目根路径*/
 var contextPath = getContextPath();
 $('body').show();
 $('.version').text(NProgress.version);
