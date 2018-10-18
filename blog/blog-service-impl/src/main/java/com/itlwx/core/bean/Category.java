@@ -1,44 +1,19 @@
-package com.itlwx.core.bo;
+package com.itlwx.core.bean;
 
-import com.itlwx.common.valid.GroupGeneral;
-import org.hibernate.validator.constraints.NotEmpty;
-
-import javax.validation.constraints.NotNull;
-import java.io.Serializable;
 import java.util.Date;
 
-public class CategoryBO implements Serializable {
-
-    @NotNull(groups = GroupGeneral.class)
+public class Category {
     private Integer id;
 
-    @NotEmpty
     private String name;
 
-    @NotNull
     private Integer type;
 
     private Date createTime;
 
-    private Date updateTime;
-
     private String remark;
 
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
+    private Date updateTime;
 
     public Integer getId() {
         return id;
@@ -72,4 +47,19 @@ public class CategoryBO implements Serializable {
         this.createTime = createTime;
     }
 
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 }

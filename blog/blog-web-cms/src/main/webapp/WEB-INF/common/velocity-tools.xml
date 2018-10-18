@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tools>
+<toolbox scope="application">
+    <tool class="com.acs.survey.util.PermissionTool" />
+    <tool class="org.apache.velocity.tools.generic.DateTool" />
+    <tool class="org.apache.velocity.tools.generic.MathTool" />
+    <tool class="org.apache.velocity.tools.generic.NumberTool" />
+    <tool class="org.apache.velocity.tools.generic.RenderTool" />
+    <tool class="org.apache.velocity.tools.generic.EscapeTool" />
+    <tool class="org.apache.velocity.tools.generic.AlternatorTool" />
+    <tool class="org.apache.velocity.tools.generic.ValueParser" />
+    <tool class="org.apache.velocity.tools.generic.SortTool" />
+</toolbox>
+</tools>

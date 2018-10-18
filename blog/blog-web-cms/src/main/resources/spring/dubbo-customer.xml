@@ -10,9 +10,6 @@
 		http://code.alibabatech.com/schema/dubbo 
 		http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
- 	<!-- 提供接口 -->
-
- 	<dubbo:service id="categoryService" interface="com.itlwx.core.service.CategoryService" ref="categoryServiceImpl" timeout="20000"/>
-
+	<dubbo:reference id="categoryService" interface="com.itlwx.core.service.CategoryService" />
 
 </beans>

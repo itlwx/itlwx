@@ -17,6 +17,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
         </dependency>
+        <!--spring效验-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
         <!--json-->
        <!-- <dependency>
             <groupId>com.google.code.gson</groupId>

@@ -288,7 +288,7 @@ font-weight:normal;font-style:normal;
 .media.media-x strong{margin-bottom:5px;}
 .media-inline .media{display:inline-block;margin-right:15px;margin-top:0;}
 .media-inline .media:last-child{margin-right:0;}
-.input{font-size:14px;padding:10px;border:solid 1px #ddd; width:100%;line-height:20px;display:block; border-radius:3px; -webkit-appearance:none;}
+.input{font-size:14px;padding:10px;border:solid 1px #ddd; width:100%;line-height:16px;display:block; border-radius:3px; -webkit-appearance:none;}
 .label{padding-bottom:7px;display:block;line-height:20px; color:#202020;}
 .label label{font-weight:bold;}
 .input-file{display:inline-block;position:relative;overflow:hidden;text-align:center;width:auto;color:#333;}
@@ -748,7 +748,7 @@ dd{padding:8px 0 15px 0;}
 }
 .table{width:100%;max-width:100%;border-collapse:collapse;border-spacing:0;}
 .table th{border-bottom:2px solid #ddd;vertical-align:bottom;padding:8px;text-align:left;}
-.table td{border-top:1px solid #ddd;padding:8px;vertical-align:top;}
+.table td{border-top:1px solid #ddd;padding:inherit;vertical-align:top;}
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th{background-color:#f9f9f9;}/*条纹-IE9以下无效果*/
 .table-bordered th,.table-bordered td{border:solid 1px #ddd;}
 .table-bordered th{border-bottom:2px solid #ddd;}
@@ -1081,3 +1081,11 @@ a:focus,a:hover{color:#0ae;} /*链接-悬浮颜色*/
 {color:#333;border-color:#3bc;background-color:#3bc;} /*融合-文本色-边框-背景*/
 .button.border-dot:hover,.button.border-dot:focus,.button.bg-dot:hover,.button.bg-dot:focus
 {color:#fff;border-color:#f00;background-color:#f00;} /*点缀色-文本-边框-背景*/
+
+
+
+/*=================*/
+.select{font-size:14px;padding:8px;border:solid 1px #ddd; width:100%;line-height:16px;display:block; border-radius:3px;}
+.trhight{
+    height: 16px;
+}

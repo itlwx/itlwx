@@ -36,6 +36,6 @@
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		<!-- 要生成哪些表 -->
-		 <table tableName="t_category" domainObjectName="category" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+		 <table tableName="t_category" domainObjectName="Category" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
 	</context>
 </generatorConfiguration>  

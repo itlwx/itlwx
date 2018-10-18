@@ -19,7 +19,7 @@ ul,li{ list-style-type:none;}
 .head-l .button{ padding:8px 15px;}
 .head-l .bg-blue:hover{ background-color:#03b6fd;}
 .leftnav{width:180px; height:100%; position:fixed; top:70px; left:0px;}
-.leftnav-title { height:50px; background:url(../images/bg.jpg) no-repeat 0 -1000px;  color:#FFF; padding-left:22px;  font-size:14px; line-height:50px;}
+.leftnav-title { height:40px; background:url(../images/bg.jpg) no-repeat 0 -1000px;  color:#FFF; padding-left:22px;  font-size:14px; line-height:50px;}
 .leftnav-title span{ margin-right:10px;}
 .leftnav h2{ padding:10px 0 10px 22px; transition:all .1s ease-in-out; display:block; cursor:pointer; font-weight:bold; font-size:14px; border-top:1px solid #b5cfd9;}
 .leftnav h2.on{ color:#09c;}
@@ -47,7 +47,7 @@ ul,li{ list-style-type:none;}
 .bread li{ float:left;}
 .label label{ font-weight:normal; color:#333;}
 .form-group{ margin-bottom:12px;}
-.button{ padding:10px 15px;}
+.button{ padding:6px;}
 .form-group .field .file{ background:#FFF; border:0px;}
 .form-group .field input[type=radio]{ vertical-align:middle; line-height:35px; margin-right:5px;}
 .form-group .radio { line-height:35px;}
@@ -56,7 +56,7 @@ ul,li{ list-style-type:none;}
 .tip img{width:100px; height:100px;}
 .clear{ clear:both; overflow:hidden;}
 .pagelist {padding:10px 0; text-align:center;}
-.pagelist span,.pagelist a{ border-radius:3px; border:1px solid #dfdfdf;display:inline-block; padding:5px 12px;}
+.pagelist span,.pagelist a{ border-radius:3px; border:1px solid #dfdfdf;display:inline-block; padding:5px 20px;}
 .pagelist a{ margin:0 3px;}
 .pagelist span.current{ background:#09F; color:#FFF; border-color:#09F; margin:0 2px;}
 .pagelist a:hover{background:#09F; color:#FFF; border-color:#09F; }

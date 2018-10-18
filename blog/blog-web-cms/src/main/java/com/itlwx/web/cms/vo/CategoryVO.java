@@ -1,6 +1,7 @@
 package com.itlwx.web.cms.vo;
 
 import java.util.Date;
+import com.itlwx.web.utils.DateFormatter;
 
 public class CategoryVO {
     private Integer id;
@@ -10,6 +11,16 @@ public class CategoryVO {
     private Integer type;
 
     private Date createTime;
+
+    private Date updateTime;
+
+    public Date getUpdateTime() {
+        return this.updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
 
     public Integer getId() {
         return id;
@@ -36,7 +47,7 @@ public class CategoryVO {
     }
 
     public Date getCreateTime() {
-        return createTime;
+        return this.createTime;
     }
 
     public void setCreateTime(Date createTime) {

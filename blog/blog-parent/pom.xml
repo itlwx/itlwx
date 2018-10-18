@@ -11,6 +11,7 @@
 
     <!-- 集中定义依赖版本号 -->
     <properties>
+        <spring.hibernate-validator>5.3.4.Final</spring.hibernate-validator>
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.12</junit.version>
@@ -52,6 +53,9 @@
     </properties>
 
     <dependencyManagement>
+
+
+
         <dependencies>
             <!-- Apache工具组件 -->
             <dependency>
@@ -137,6 +141,7 @@
                 <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
@@ -156,6 +161,12 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context-support</artifactId>
                 <version>${spring.version}</version>
+            </dependency>
+            <!--spring效验-->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${spring.hibernate-validator}</version>
             </dependency>
             <!-- JSP相关 -->
             <dependency>

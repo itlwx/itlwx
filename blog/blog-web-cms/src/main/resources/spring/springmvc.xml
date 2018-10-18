@@ -17,10 +17,19 @@
 	<mvc:annotation-driven />
 
 
+	<!--<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/page/" />
+		<property name="suffix" value=".html" />
+	</bean>-->
+	<!-- 配置资源映射 -->
+	<!--<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>-->
+
 
 	<!--采用volecity模板引擎-->
 	<bean id="velocityConfigurer" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
-		<property name="resourceLoaderPath" value="WEB-INF/page"/>
+		<property name="resourceLoaderPath" value="page/"/>
 		<property name="velocityProperties">
 			<props>
 				<prop key="input.encoding">utf-8</prop>
@@ -35,21 +44,12 @@
 		<property name="suffix" value=".html"/>
 		<property name="contentType" value="text/html;charset=utf-8"/>
 		<property name="requestContextAttribute" value="rc"/>
+		<property name="dateToolAttribute" value="date"/>
 		<!--自定义工具-->
-		<!--<property name="toolboxConfigLocation" value="WEB-INF/common/velotity-tools.xml"/>-->
+		<property name="toolboxConfigLocation" value="WEB-INF/common/velocity-tools.xml"/>
 	</bean>
 
 
-
-
-	<!--<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/page/" />
-		<property name="suffix" value=".html" />
-	</bean>-->
-	<!-- 配置资源映射 -->
-	<!--<mvc:resources location="/WEB-INF/page/css/" mapping="/css/**"/>
-	<mvc:resources location="/WEB-INF/page/js/" mapping="/js/**"/>-->
 
 	<!-- 配置多媒体解析器 -->
 	<!-- 定义文件上传解析器 -->
@@ -62,7 +62,8 @@
 	</bean>
 
 	<!-- 引用dubbo服务 -->
-	<!--<dubbo:application name="e3-manager-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.25.160:2181"/>	
-	<dubbo:reference interface="cn.e3mall.service.ItemService" id="itemService" />-->
+	<dubbo:application name="blog-web-cms"/>
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+
+	<import resource="dubbo-customer.xml"/>
 </beans>
