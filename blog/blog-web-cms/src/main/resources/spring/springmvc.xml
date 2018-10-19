@@ -64,6 +64,13 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="blog-web-cms"/>
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
-
 	<import resource="dubbo-customer.xml"/>
+
+	<!-- Spring容器初始化监听器 -->
+	<bean class="com.itlwx.common.utils.SpringContextUtil" />
+
+	<bean id="dozerBeanMapperFactoryBean" class="org.dozer.spring.DozerBeanMapperFactoryBean" scope="singleton">
+		<property name="mappingFiles" value="classpath*:/*Mapping.xml" />
+	</bean>
+
 </beans>

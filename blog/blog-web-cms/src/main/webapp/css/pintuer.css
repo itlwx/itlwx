@@ -1089,3 +1089,9 @@ a:focus,a:hover{color:#0ae;} /*链接-悬浮颜色*/
 .trhight{
     height: 16px;
 }
+
+.notice_ok{
+    margin-left: 15px;
+    font-size: 14px;
+    color:#0ae;
+}

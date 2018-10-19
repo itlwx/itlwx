@@ -21,7 +21,7 @@ public class ErrorCode {
 
 
 	/*公共*/
-	public static final ErrorCode PUBLIC_RECORED_EXIST_ = new ErrorCode(1006001, "记录已存在");
+	public static final ErrorCode PUBLIC_RECORED_EXIST = new ErrorCode(1006001, "记录已存在");
 
 
 	private int errorCode;

@@ -37,7 +37,7 @@ public class CategoryServiceImpl implements CategoryService {
             Category category = categories.get(0);
             if (!category.getId().equals(categoryBO.getId())) {
                 //若同类型下有相同的类别，抛出异常
-                throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST_);
+                throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST);
             }
 
         }
@@ -106,7 +106,7 @@ public class CategoryServiceImpl implements CategoryService {
             Category category = categories.get(0);
             if (!category.getId().equals(cateBO.getId())) {
                 //若同类型下有相同的类别，抛出异常
-                throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST_);
+                throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST);
             }
 
         }
