@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="$rc.contextPath/css/pintuer.css">
+<link rel="stylesheet" href="$rc.contextPath/css/admin.css">
+<script src="$rc.contextPath/js/jquery.js"></script>
+<script src="$rc.contextPath/js/pintuer.js"></script>
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong></div>
+  <div class="padding border-bottom">
+    <button type="button" class="button border-yellow" onclick="window.location.href='$rc.contextPath/category/showCateadd.htm'"><span class="icon-plus-square-o"></span> 添加分类</button>
+  </div>
+  <table class="table table-hover text-center">
+    <tr>
+      <th width="5%">ID</th>
+      <th width="15%">类别名称</th>
+      <th width="10%">类别种类</th>
+      <th width="10%">创建时间</th>
+      <th width="10%">更新时间</th>
+      <th width="10%">备注信息</th>
+      <th width="10%">操作</th>
+    </tr>
+    #foreach($item in $ps.items)
+      <tr class="trhight">
+        <td>$item.id</td>
+        <td>$item.name</td>
+        <td>$item.type</td>
+        <td>$!date.format('yyyy-MM-dd HH:mm:ss',$!item.createTime)</td>
+        <td>$!date.format('yyyy-MM-dd HH:mm:ss',$!item.updateTime)</td>
+        <td>$!item.remark</td>
+        <td><div class="button-group"> <a class="button border-main" href="javascript:void(0)" onclick="javascript:window.location.href='$rc.contextPath/category/showedit.htm?id=$item.id';"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(1,2)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+      </tr>
+    #end
+
+    <tr>
+      #set($perPage = $!ps.currentPage - 1)
+      #set($nextPage = $!ps.currentPage + 1)
+      #if($nextPage > $ps.getCountPage()) #set($nextPage = $!ps.currentPage) #end
+      <td colspan="8"><div class="pagelist"> <a href="$rc.contextPath/category/query.htm?currentPage=$!perPage">上一页</a> <span class="current">$!ps.currentPage</span><a href="$rc.contextPath/category/query.htm?currentPage=$!nextPage">下一页</a><a href="$rc.contextPath/category/query.htm?currentPage=$!ps.getCountPage()">尾页</a> </div></td>
+    </tr>
+  </table>
+</div>
+<script type="text/javascript">
+function del(id,mid){
+	if(confirm("您确定要删除吗?")){			
+		
+	}
+}
+function addItem(){
+    localStorage.setItem("item","testi123");
+    window.location.href = 'cateedit.html';
+}
+</script>
+<!--<div class="panel admin-panel margin-top">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>添加内容</strong></div>
+  <div class="body-content">
+    <input method="post" class="form-x" action="">
+      <div class="form-group">
+        <div class="label">
+          <label>上级分类：</label>
+        </div>
+        <div class="field">
+          <select name="pid" class="input w50">
+            <option value="">请选择分类</option>
+            <option value="">产品分类</option>
+            <option value="">产品分类</option>
+            <option value="">产品分类</option>
+            <option value="">产品分类</option>
+          </select>
+          <div class="tips">不选择上级分类默认为一级分类</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>分类标题：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="title" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>批量添加：</label>
+        </div>
+        <div class="field">
+          <textarea type="text" class="input w50" name="tits" style="height:150px;" placeholder="多个分类标题请转行"></textarea>
+          <div class="tips">多个分类标题请转行</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>关键字标题：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_title" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>分类关键字：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_keywords" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>关键字描述：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input" name="s_desc"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>排序：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="sort" value="0"  data-validate="number:排序必须为数字" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>-->
+</body>
+</html>

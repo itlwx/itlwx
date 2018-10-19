@@ -6,18 +6,10 @@
         <artifactId>blog-parent</artifactId>
         <groupId>com.itlwx</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../blog-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>blog-service</artifactId>
+    <artifactId>blog-web-portal</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.itlwx</groupId>
-            <artifactId>blog-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

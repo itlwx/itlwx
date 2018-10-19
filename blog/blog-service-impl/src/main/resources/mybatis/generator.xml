@@ -5,7 +5,7 @@
 <generatorConfiguration>
 	<context id="wellTables" targetRuntime="MyBatis3">
 		<!-- 这里引入扩展插件 -->
-		<plugin type="com.well.util.PaginationPlugin" />
+		<plugin type="com.itlwx.core.utils.PaginationPlugin" />
 		<commentGenerator>
 			<property name="suppressDate" value="true" />
 			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -13,29 +13,29 @@
 		</commentGenerator>
 		<!--数据库链接URL，用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://192.168.2.222/well_cloud" userId="root"
+			connectionURL="jdbc:mysql://127.0.0.1/itlwx" userId="root"
 			password="1234">
 		</jdbcConnection>
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 		<!-- 生成模型的包名和位置 -->
-		<javaModelGenerator targetPackage="com.well.system.bean"
+		<javaModelGenerator targetPackage="com.itlwx.core.bean"
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="false" />
 		</javaModelGenerator>
 		<!-- 生成映射文件的包名和位置 -->
-		<sqlMapGenerator targetPackage="com.well.system.mapper.mapping"
+		<sqlMapGenerator targetPackage="com.itlwx.core.mapper.mapping"
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- 生成DAO的包名和位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.well.system.mapper" targetProject="src/main/java">
+			targetPackage="com.itlwx.core.mapper" targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		<!-- 要生成哪些表 -->
-		 <table tableName="qrtz_job" domainObjectName="Job" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+		 <table tableName="t_category" domainObjectName="Category" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
 	</context>
 </generatorConfiguration>  
