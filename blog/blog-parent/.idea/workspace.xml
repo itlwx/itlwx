@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="blog-web-cms:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbc78fb5-d725-4292-99f7-cc251f003e60" name="Default Changelist" comment="搭建项目框架--%80">
+      <change afterPath="$PROJECT_DIR$/../blog-cms/blog-web-cms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog-cms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog-cms/src/main/resources/conf/resource.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog-cms/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog-cms/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/mapper/categoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/pintuer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/pintuer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateadd.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateadd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/META-INF/war-tracker" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/classes/com/itlwx/web/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/classes/conf/resource.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/classes/spring/springmvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/antlr-2.7.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/aspectjweaver-1.8.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-beanutils-1.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-chain-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-collections-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-digester-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-lang-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-logging-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/commons-validator-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/dom4j-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/dubbo-2.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/javassist-3.15.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/jline-0.9.94.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/log4j-1.2.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/netty-3.7.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/oro-2.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/slf4j-api-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/slf4j-log4j12-1.6.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-aop-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-aspects-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-context-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-context-support-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-jms-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-messaging-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/sslext-1.2-0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/struts-core-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/struts-taglib-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/struts-tiles-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/velocity-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/velocity-tools-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/zkclient-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/lib/zookeeper-3.4.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/page/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/page/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/page/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/page/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/css/nprogress.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/TaurusNormal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/TaurusNormal.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/TaurusNormal.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/fontawesome-webfont(1).svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/201610171329086541.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/201610181557196870.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/201610181739277776.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/201610241224221511.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/201610241227558789.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/backtop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/news-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/images/occupying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/html5shiv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/jquery-1.11.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/jquery-2.1.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/jquery.ias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/jquery.lazyload.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/nprogress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tomcat8.5.32/webapps/blog-web/js/selectivizr-min.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/../blog-web/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../target/" />
+    <ignored path="$PROJECT_DIR$/../blog-service/target/" />
+    <ignored path="$PROJECT_DIR$/../blog-service-impl/target/" />
+    <ignored path="$PROJECT_DIR$/../blog-common/target/" />
+    <ignored path="$PROJECT_DIR$/../blog-cms/target/" />
+    <ignored path="$PROJECT_DIR$/blog-web-portal/target/" />
+    <ignored path="$PROJECT_DIR$/../blog-web-portal/target/" />
+    <ignored path="$PROJECT_DIR$/../blog-web-cms/target/" />
+    <ignored path="../.idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2013281794">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="8" />
+          <entry key="css" value="10" />
+          <entry key="html" value="27" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="72" />
+          <entry key="js" value="4" />
+          <entry key="pdb" value="1" />
+          <entry key="properties" value="12" />
+          <entry key="rnc" value="1" />
+          <entry key="xml" value="81" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="8" />
+          <entry key="CSS" value="10" />
+          <entry key="HTML" value="27" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="JAVA" value="72" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="12" />
+          <entry key="RNG Compact" value="1" />
+          <entry key="XML" value="81" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="104" />
+          <entry key="dummy" value="25" />
+          <entry key="html" value="1785" />
+          <entry key="java" value="2923" />
+          <entry key="js" value="318" />
+          <entry key="properties" value="28" />
+          <entry key="txt" value="23" />
+          <entry key="xml" value="565" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="104" />
+          <entry key="HTML" value="1785" />
+          <entry key="JAVA" value="2923" />
+          <entry key="JavaScript" value="318" />
+          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="Properties" value="28" />
+          <entry key="XML" value="565" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/service/impl/CategoryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/CategoryException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding>
+                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/BlogException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/ErrorCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/controller/CategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/utils/SpringContextUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#631#632#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/springmvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/utils/MapperUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateadd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/pintuer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="1093" column="22" lean-forward="true" selection-start-line="1093" selection-start-column="22" selection-end-line="1093" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>查看</find>
+      <find>pagination-loading</find>
+      <find>class=&quot;pagination-loading&quot;</find>
+      <find>mybatis-generator-core.version</find>
+      <find>mybatis.paginator.version</find>
+      <find>fastjson</find>
+      <find>gson</find>
+      <find>jackson.version</find>
+      <find>.input</find>
+      <find>input</find>
+      <find>images/</find>
+      <find>..</find>
+      <find>$rc.contextPath</find>
+      <find>js/</find>
+      <find>velocity-tools</find>
+      <find>table-hover</find>
+      <find>tr</find>
+      <find>.button</find>
+      <find>css/</find>
+      <find>button</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>$rc.contextPath/images/</replace>
+      <replace>$rc.contextPath</replace>
+      <replace>..</replace>
+      <replace>$rc.contextPath/css/</replace>
+      <replace>$rc.contextPath/js/</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../blog-web-portal/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-portal/pom.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-portal/src/main/java/com/itlwx/web/portal/controller/PortalController.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/controller/PortalController.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/pom.xml" />
+        <option value="$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/utils/PaginationPlugin.java" />
+        <option value="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/utils/MapperUtil.java" />
+        <option value="$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/GateforyBO.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/cateadd.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/cateedit.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/cate.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/WEB-INF/page/index.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/WEB-INF/page/login.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/springmvc.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/login.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/info.html" />
+        <option value="$PROJECT_DIR$/../blog-service-impl/src/main/resources/mybatis/generator.xml" />
+        <option value="$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/CategoryQueryBO.java" />
+        <option value="$PROJECT_DIR$/../blog-service-impl/src/main/resources/spring/dubbo-provider.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-portal/src/main/resources/spring/dubbo-customer.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/dubbo-customer.xml" />
+        <option value="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/valid/GroupAll.java" />
+        <option value="$PROJECT_DIR$/../blog-common/pom.xml" />
+        <option value="$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/CategoryBO.java" />
+        <option value="$PROJECT_DIR$/../blog-web/src/main/java/com/itlwx/web/utils/DateFormatter.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/WEB-INF/common/velotity-tools.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/vo/CategoryVO.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/../blog-web/src/main/java/com/itlwx/web/utils/VelocityLayoutToolbox2View.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/WEB-INF/common/velocity-tools.xml" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/admin.css" />
+        <option value="$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/Pageable.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cate.html" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/index.html" />
+        <option value="$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/PageSet.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateedit.html" />
+        <option value="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/BlogException.java" />
+        <option value="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/CategoryException.java" />
+        <option value="$PROJECT_DIR$/../blog-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../blog-web/src/main/java/com/itlwx/web/utils/HttpResult.java" />
+        <option value="$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/js/pintuer.js" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/ErrorCode.java" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/pintuer.css" />
+        <option value="$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateadd.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="E:\work\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="175" />
+    <option name="width" value="1475" />
+    <option name="height" value="991" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog-web-cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.idea" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\work\itlwx\blog\blog-web-cms\src\main\resources\spring" />
+      <recent name="E:\work\itlwx\blog\blog-web-cms\src\main\webapp" />
+      <recent name="E:\work\itlwx\blog\blog-web-cms\src\main\webapp\WEB-INF\page" />
+      <recent name="E:\work\itlwx\blog\blog-web-cms\src\main\webapp\WEB-INF" />
+      <recent name="E:\work\itlwx\blog\blog-service-impl\src\main\prototype" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itlwx.web.cms.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\work\itlwx\blog\blog-web\src\main\java\com\itlwx\web\utils" />
+      <recent name="E:\work\itlwx\blog\blog-common\src\main\java\com\itlwx\common\exception" />
+      <recent name="E:\work\itlwx\blog\blog-web-cms\src\main\resources" />
+      <recent name="E:\work\itlwx\blog\blog-common\src\main\java\com\itlwx\common\valid" />
+      <recent name="E:\work\itlwx\blog\blog-web-cms\src\main\resources\spring" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.blog-web-cms">
+    <configuration name="GeneratorMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itlwx.core.main.GeneratorMain" />
+      <module name="blog-service-impl" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itlwx.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itlwx.core.main.GeneratorMain" />
+      <module name="blog-service-impl" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itlwx.core.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceProviderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itlwx.core.main.ServiceProviderMain" />
+      <module name="blog-service-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itlwx.core.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="blog-web-cms" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="blog-web-cms:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/cms" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_blog-parent_2" />
+        <option name="HTTP_PORT" value="8081" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49970" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="blog-web-cms:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="blog-web-portal" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="blog-web:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/itlwx" />
+          </settings>
+        </artifact>
+        <artifact name="blog-web-portal:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/portal" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_blog-parent" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55136" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="blog-web:war" />
+          <artifact name="blog-web-portal:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.blog-web-portal" />
+      <item itemvalue="Tomcat Server.blog-web-cms" />
+      <item itemvalue="Application.GeneratorMain" />
+      <item itemvalue="Application.ServiceProviderMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ServiceProviderMain" />
+        <item itemvalue="Application.GeneratorMain" />
+        <item itemvalue="Application.GeneratorMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbc78fb5-d725-4292-99f7-cc251f003e60" name="Default Changelist" comment="" />
+      <created>1539567437385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539567437385</updated>
+      <workItem from="1539567438726" duration="17443000" />
+      <workItem from="1539650096828" duration="20453000" />
+      <workItem from="1539677974305" duration="20000" />
+      <workItem from="1539678015577" duration="15000" />
+      <workItem from="1539678116827" duration="7079000" />
+      <workItem from="1539736623025" duration="28131000" />
+      <workItem from="1539823432739" duration="28962000" />
+      <workItem from="1539909808548" duration="10103000" />
+    </task>
+    <task id="LOCAL-00001" summary="修改页面">
+      <created>1539573631628</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539573631628</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加jar">
+      <created>1539599317748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539599317748</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加jar">
+      <created>1539599341979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539599341979</updated>
+    </task>
+    <task id="LOCAL-00004" summary="搭建项目框架--%80">
+      <created>1539686409476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539686409477</updated>
+    </task>
+    <task id="LOCAL-00005" summary="搭建项目框架--%100">
+      <created>1539856307730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539856307730</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="112206000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992343" visible="true" weight="0.14179105" />
+      <window_info id="Structure" order="1" sideWeight="0.5007657" side_tool="true" weight="0.14179105" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49823323" visible="true" weight="0.28990227" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29641694" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5017668" side_tool="true" weight="0.30607477" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49893993" weight="0.21281216" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32943925" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32889125" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改页面" />
+    <MESSAGE value="添加jar" />
+    <MESSAGE value="搭建项目框架--%80" />
+    <MESSAGE value="搭建项目框架--%100" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建项目框架--%100" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/resources/resource/dubbo.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/resources/resource/system.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-portal/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-347">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/resources/spring/dubbo-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-portal/src/main/resources/spring/dubbo-customer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="91" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/blog-common.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/valid/GroupAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/valid/GroupGeneral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/vo/CategoryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/dubbo-customer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web/src/main/java/com/itlwx/web/utils/VelocityLayoutToolbox2View.java" />
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/WEB-INF/common/velocity-tools.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="175" column="11" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="175" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="58" column="112" lean-forward="true" selection-start-line="58" selection-start-column="112" selection-end-line="58" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/Pageable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-core/4.2.4.RELEASE/spring-core-4.2.4.RELEASE.jar!/org/springframework/util/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="461" selection-start-line="461" selection-end-line="461" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="402" selection-start-line="402" selection-end-line="402" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/mavenCode/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="457" column="28" selection-start-line="457" selection-start-column="28" selection-end-line="457" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="279" selection-start-line="45" selection-start-column="279" selection-end-line="45" selection-end-column="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/PageSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="83" column="49" lean-forward="true" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/bean/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/bo/CategoryBO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateedit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="82" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web/blog-web.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web/src/main/java/com/itlwx/web/utils/DateFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service/src/main/java/com/itlwx/core/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/js/pintuer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web/src/main/java/com/itlwx/web/utils/HttpResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/resources/spring/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/utils/MapperUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/utils/SpringContextUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#631#632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/java/com/itlwx/web/cms/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/ErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-service-impl/src/main/java/com/itlwx/core/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/CategoryException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-common/src/main/java/com/itlwx/common/exception/BlogException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/css/pintuer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="1093" column="22" lean-forward="true" selection-start-line="1093" selection-start-column="22" selection-end-line="1093" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../blog-web-cms/src/main/webapp/page/cateadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>blog-web:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>blog-web-cms</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

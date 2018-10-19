@@ -1,30 +1,30 @@
 package com.itlwx.core.mapper;
 
-import com.itlwx.core.bean.category;
-import com.itlwx.core.bean.categoryExample;
+import com.itlwx.core.bean.Category;
+import com.itlwx.core.bean.CategoryExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
-public interface categoryMapper {
-    int countByExample(categoryExample example);
+public interface CategoryMapper {
+    int countByExample(CategoryExample example);
 
-    int deleteByExample(categoryExample example);
+    int deleteByExample(CategoryExample example);
 
     int deleteByPrimaryKey(Integer id);
 
-    int insert(category record);
+    int insert(Category record);
 
-    int insertSelective(category record);
+    int insertSelective(Category record);
 
-    List<category> selectByExample(categoryExample example);
+    List<Category> selectByExample(CategoryExample example);
 
-    category selectByPrimaryKey(Integer id);
+    Category selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") category record, @Param("example") categoryExample example);
+    int updateByExampleSelective(@Param("record") Category record, @Param("example") CategoryExample example);
 
-    int updateByExample(@Param("record") category record, @Param("example") categoryExample example);
+    int updateByExample(@Param("record") Category record, @Param("example") CategoryExample example);
 
-    int updateByPrimaryKeySelective(category record);
+    int updateByPrimaryKeySelective(Category record);
 
-    int updateByPrimaryKey(category record);
+    int updateByPrimaryKey(Category record);
 }
