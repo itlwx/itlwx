@@ -1,0 +1,7 @@
+com\itlwx\core\service\CategoryService.class
+com\itlwx\core\bo\PageSet.class
+com\itlwx\core\service\UserService.class
+com\itlwx\core\bo\CategoryBO.class
+com\itlwx\core\bo\CategoryQueryBO.class
+com\itlwx\core\bo\Pageable.class
+com\itlwx\core\bo\UserBO.class

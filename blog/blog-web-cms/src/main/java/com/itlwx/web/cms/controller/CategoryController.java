@@ -4,46 +4,54 @@ import com.itlwx.core.bo.CategoryBO;
 import com.itlwx.core.bo.CategoryQueryBO;
 import com.itlwx.core.bo.PageSet;
 import com.itlwx.core.service.CategoryService;
+import com.itlwx.web.BaseController;
 import com.itlwx.web.utils.HttpResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import javax.servlet.http.HttpServletRequest;
+
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
 @RequestMapping(value = "/category")
-public class CategoryController {
+public class CategoryController extends BaseController{
 
     @Autowired
     private CategoryService categoryService;
 
+    /**
+     * 查询
+     * @param queryBO
+     * @param mav
+     * @return
+     */
     @RequestMapping(value = "/query")
-    public ModelAndView query(CategoryQueryBO queryBO,ModelAndView mav,boolean forwar){
-
-        /*如果为请求转发，做特殊处理*/
-        if(forwar){
-            queryBO.setName(null);
-            queryBO.setType(null);
-        }
-
+    public ModelAndView query(CategoryQueryBO queryBO,ModelAndView mav){
         PageSet<CategoryBO> pageSet = categoryService.query(queryBO);
         mav.setViewName("cate");
         mav.addObject("ps",pageSet);
+
         return mav;
     }
 
+
     @RequestMapping(value = "/showCateadd")
-    public String toIndex(){
+    public String showCateadd(){
         return "cateadd";
     }
 
+    /**
+     * 添加
+     * @param categoryBO
+     * @return
+     * @throws CategoryException
+     */
     @RequestMapping(value = "/cateadd")
-    public String cateadd(@Validated CategoryBO categoryBO, HttpServletResponse response) throws CategoryException {
+    public ModelAndView cateadd(@Validated CategoryBO categoryBO) throws CategoryException {
         categoryService.add(categoryBO);
-        HttpResult.toSuccess(response);
+        HttpResult.toSuccess(getResponse());
         return null;
     }
 
@@ -55,11 +63,28 @@ public class CategoryController {
         return mav;
     }
 
+    /**
+     * 编辑
+     * @param categoryBO
+     * @return
+     * @throws CategoryException
+     */
     @RequestMapping(value = "/cateedit")
-    public String cateedit(CategoryBO categoryBO) throws CategoryException {
+    public ModelAndView cateedit(CategoryBO categoryBO) throws CategoryException {
         categoryService.edit(categoryBO);
-        return "forward: /query.htm?forwar=true";
+        HttpResult.toSuccess(getResponse());
+        return null;
     }
 
+    /**
+     * 删除
+     * @param categoryBO
+     * @return
+     */
+    @RequestMapping(value = "/catedel")
+    public String catedel(CategoryBO categoryBO){
+        categoryService.deleteByID(categoryBO.getId());
+        return "forward:/category/query.htm";
+    }
 
 }

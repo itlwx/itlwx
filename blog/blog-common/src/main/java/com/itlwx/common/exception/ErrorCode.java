@@ -23,6 +23,10 @@ public class ErrorCode {
 	/*公共*/
 	public static final ErrorCode PUBLIC_RECORED_EXIST = new ErrorCode(1006001, "记录已存在");
 
+	/*用户*/
+	public static final ErrorCode LOGIN_PARAM_NULL = new ErrorCode(1005001, "登录名或密码不能为空");
+	public static final ErrorCode LOGIN_PARAM_ERROR = new ErrorCode(1005002, "登录名或密码不正确");
+	public static final ErrorCode VALID_CODE_ERROR = new ErrorCode(1005003, "验证码错误");
 
 	private int errorCode;
 	private String errorMsg;

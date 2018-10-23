@@ -39,7 +39,6 @@ public class CategoryServiceImpl implements CategoryService {
                 //若同类型下有相同的类别，抛出异常
                 throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST);
             }
-
         }
 
         Category category = MapperUtil.map(categoryBO, Category.class);
@@ -50,7 +49,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public void deleteByID(Integer id) {
-
+        categoryMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -113,7 +112,18 @@ public class CategoryServiceImpl implements CategoryService {
 
         Category category = MapperUtil.map(cateBO, Category.class);
         category.setUpdateTime(new Date());
-        categoryMapper.updateByPrimaryKey(category);
+        categoryMapper.updateByPrimaryKeySelective(category);
+    }
+
+    @Override
+    public List<CategoryBO> getListByType(Integer type) {
+        CategoryExample example = new CategoryExample();
+        example.createCriteria().andTypeEqualTo(type);
+        List<Category> categories = categoryMapper.selectByExample(example);
+        if (categories != null && categories.size() > 0){
+            return MapperUtil.map(categories,CategoryBO.class);
+        }
+        return null;
     }
 
 }

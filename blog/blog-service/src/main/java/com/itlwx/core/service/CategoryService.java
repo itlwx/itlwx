@@ -5,6 +5,8 @@ import com.itlwx.core.bo.CategoryBO;
 import com.itlwx.core.bo.CategoryQueryBO;
 import com.itlwx.core.bo.PageSet;
 
+import java.util.List;
+
 /**
  * 类别服务抽象接口
  * @author dawn
@@ -41,5 +43,12 @@ public interface CategoryService {
      * @param cateBO
      */
     void edit(CategoryBO cateBO) throws CategoryException;
+
+    /**
+     * 根据类型获取分类列表
+     * @param type
+     * @return
+     */
+    List<CategoryBO> getListByType(Integer type);
 
 }
