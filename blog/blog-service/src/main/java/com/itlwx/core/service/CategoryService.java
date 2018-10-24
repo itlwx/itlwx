@@ -12,6 +12,10 @@ import java.util.List;
  * @author dawn
  */
 public interface CategoryService {
+
+    public final static Integer TYPE_ARTICLE = 1;
+    public final static Integer TYPE_AUDIO = 2;
+    public final static Integer TYPE_VIDEO = 3;
     /**
      * 添加类别
      * @param categoryBO
