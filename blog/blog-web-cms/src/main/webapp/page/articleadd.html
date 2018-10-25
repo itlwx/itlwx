@@ -10,12 +10,16 @@
 <link rel="stylesheet" href="$rc.contextPath/css/admin.css">
 <script src="$rc.contextPath/js/jquery.js"></script>
 <script src="$rc.contextPath/js/pintuer.js"></script>
+  <!-- 配置文件 -->
+<script type="text/javascript" src="$rc.contextPath/js/uedit/ueditor.config.js"></script>
+  <!-- 编辑器源码文件 -->
+<script type="text/javascript" src="$rc.contextPath/js/uedit/ueditor.all.js"></script>
 </head>
 <body>
 <div class="panel admin-panel">
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>发表文章</strong></div>
   <div class="body-content">
-    <form method="post" class="form-x" action="">  
+    <form method="post" class="form-x" action="$rc.contextPath/">
       <div class="form-group">
         <div class="label">
           <label>标题：</label>
@@ -44,13 +48,29 @@
           <label>内容：</label>
         </div>
         <div class="field">
-          <textarea name="content" class="input" style="height:450px; border:1px solid #ddd;"></textarea>
+          <!-- 加载编辑器的容器 -->
+          <script id="container" name="content" type="text/plain" style="height:430px; border:1px solid #ddd;">
+            写点什么吧...
+          </script>
           <div class="tips"></div>
         </div>
       </div>
 
+              <div class="form-group">
+              <div class="label">
+              <label></label>
+              </div>
+              <div class="field">
+              <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+              </div>
+              </div>
+
     </form>
   </div>
 </div>
+
+<script type="text/javascript">
+    var editor = UE.getEditor('container');
+</script>
 
 </body></html>
