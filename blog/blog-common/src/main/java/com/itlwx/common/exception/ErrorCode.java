@@ -28,6 +28,7 @@ public class ErrorCode {
 	public static final ErrorCode LOGIN_PARAM_ERROR = new ErrorCode(1005002, "登录名或密码不正确");
 	public static final ErrorCode VALID_CODE_ERROR = new ErrorCode(1005003, "验证码错误");
 
+
 	private int errorCode;
 	private String errorMsg;
 	
