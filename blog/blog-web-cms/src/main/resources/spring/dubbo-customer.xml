@@ -12,4 +12,5 @@
 
 	<dubbo:reference id="categoryService" interface="com.itlwx.core.service.CategoryService"/>
 	<dubbo:reference id="userService" interface="com.itlwx.core.service.UserService" />
+	<dubbo:reference id="articleService" interface="com.itlwx.core.service.ArticleService" />
 </beans>

@@ -22,11 +22,20 @@ public class ErrorCode {
 
 	/*公共*/
 	public static final ErrorCode PUBLIC_RECORED_EXIST = new ErrorCode(1006001, "记录已存在");
+	public static final ErrorCode PUBLIC_ID_NOTNULL = new ErrorCode(1006001, "记录ID不能为空");
+	public static final ErrorCode PUBLIC_RECORED_NOTEXIST = new ErrorCode(1006001, "记录ID不能为空");
 
 	/*用户*/
 	public static final ErrorCode LOGIN_PARAM_NULL = new ErrorCode(1005001, "登录名或密码不能为空");
 	public static final ErrorCode LOGIN_PARAM_ERROR = new ErrorCode(1005002, "登录名或密码不正确");
 	public static final ErrorCode VALID_CODE_ERROR = new ErrorCode(1005003, "验证码错误");
+
+	/*文章*/
+	public static final ErrorCode ARTICLE_TITLE_REPEATED = new ErrorCode(1002001, "文章标题重复");
+
+	/*类别*/
+	public static final ErrorCode CATEGORY_NOT_DELETE = new ErrorCode(1002001, "此类别下有记录，不能删除");
+
 
 
 	private int errorCode;

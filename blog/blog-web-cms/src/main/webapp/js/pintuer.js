@@ -523,6 +523,7 @@ function submitForm(formId,url,notice,openURL,className){
 }
 
 function cleanNotice(noticeId) {
+	console.log("12313");
     $("#"+noticeId).text("");
     return false;
 }
@@ -537,19 +538,22 @@ function cleanForm(formId){
         .removeAttr('checked');
 }
 
-/*
-function catedel(id,url,returnURL){
+function kill(url,openUrl,noticeId,className){
     if(confirm("您确定要删除吗?")){
         $.ajax({
-            url:url,
-            data:'id='+id,
-            dataType:"json",
-            type:"post",
+			url:url,
+			type:"post",
+			dataType:"json",
             success:function(data) {
                 if(data.code == 1000200){
-                    window.location.href = returnURL;
-				}
+                    window.location.href = openUrl;
+                }else{
+                    $("#"+noticeId).addClass(className);
+                    $("#"+noticeId).text(data.msg);
+                    window.setTimeout(function(){cleanNotice(noticeId)},5000);
+                }
             }
-        })
+		});
     }
-}*/
+    return false;
+}

@@ -20,12 +20,13 @@
   <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>发表文章</strong></div>
   <div class="body-content">
     <form id="articleAddForm" class="form-x">
+      <input name="id" type="hidden" value="$!item.id"/>
       <div class="form-group">
         <div class="label">
           <label>标题：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" value="" name="title" data-validate="required:请输入标题" />
+          <input type="text" class="input w50" value="$!item.title" name="title" data-validate="required:请输入标题" />
           <div class="tips"></div>
         </div>
       </div>
@@ -36,8 +37,8 @@
         <div class="field">
           <select name="categoryId" required class="select w50" >
             <option value =""></option>
-            #foreach($item in $items)
-            <option value = "$item.id">$item.name</option>
+            #foreach($item1 in $categrys)
+            <option value = "$item1.id" #if($item.categoryId == $item1.id) selected #end>$item1.name</option>
             #end
           </select>
         </div>
@@ -50,7 +51,6 @@
         <div class="field">
           <!-- 加载编辑器的容器 -->
           <script id="container" name="content" type="text/plain" style="height:430px; border:1px solid #ddd;">
-            写点什么吧...
           </script>
           <div class="tips"></div>
         </div>
@@ -69,8 +69,17 @@
   </div>
 </div>
 
+<span id="content" style="display: none">$!item.content</span>
+
 <script type="text/javascript">
-    var editor = UE.getEditor('container');
+    $(function () {
+        var editor = UE.getEditor('container');
+        var _content = $("#content").html();
+        editor.ready(function () {
+            editor.setContent('');
+            editor.execCommand('insertHtml',_content);
+        });
+    })
 </script>
 
 </body></html>

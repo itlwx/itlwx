@@ -1,11 +1,13 @@
 package com.itlwx.web.cms.controller;
 
-import com.itlwx.core.bo.ArticleBO;
-import com.itlwx.core.bo.CategoryBO;
-import com.itlwx.core.bo.CategoryQueryBO;
-import com.itlwx.core.bo.PageSet;
+import com.itlwx.common.exception.ArticleException;
+import com.itlwx.common.exception.ErrorCode;
+import com.itlwx.common.valid.GroupAll;
+import com.itlwx.core.bo.*;
+import com.itlwx.core.service.ArticleService;
 import com.itlwx.core.service.CategoryService;
 import com.itlwx.web.BaseController;
+import com.itlwx.web.utils.HttpResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
@@ -16,13 +18,19 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping(value = "/article")
 public class ArticleController extends BaseController {
 
+    @Autowired
+    private ArticleService articleService;
 
     @Autowired
     private CategoryService cateService;
 
-    @RequestMapping(value = "/list")
-    public String showList(){
-        return "articlelist";
+    @RequestMapping(value = "/query")
+    public ModelAndView query(ArticleQueryBO queryBO){
+        PageSet<ArticleBO> ps = articleService.query(queryBO);
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("articlelist");
+        mav.addObject("ps",ps);
+        return mav;
     }
 
     @RequestMapping(value = "/showAdd")
@@ -37,9 +45,42 @@ public class ArticleController extends BaseController {
     }
 
     @RequestMapping(value = "/add")
-    public String add(@Validated ArticleBO articleBO){
+    public ModelAndView add(@Validated ArticleBO articleBO) throws ArticleException {
         articleBO.setAuthroId(getSessionUser().getId());
+        articleService.add(articleBO);
+        HttpResult.toSuccess(getResponse());
+        return null;
+    }
 
-        return "articlelist";
+    @RequestMapping(value = "/showEdit")
+    public ModelAndView showEdit(Integer id) throws ArticleException{
+        ModelAndView mav = new ModelAndView();
+        //加载文章记录
+        ArticleBO articleBO = articleService.getById(id);
+
+        //加载文章类别数据
+        CategoryQueryBO cateQueryBO = new CategoryQueryBO();
+        cateQueryBO.setType(CategoryService.TYPE_ARTICLE);
+        PageSet<CategoryBO> pageSet = cateService.query(cateQueryBO);
+
+
+        mav.setViewName("articleedit");
+        mav.addObject("item",articleBO);
+        mav.addObject("categrys",pageSet.getItems());
+        return mav;
+    }
+
+    @RequestMapping(value = "/edit")
+    public ModelAndView edit(@Validated(GroupAll.class) ArticleBO articleBO) throws ArticleException {
+        articleBO.setAuthroId(getSessionUser().getId());
+        articleService.update(articleBO);
+        HttpResult.toSuccess(getResponse());
+        return null;
+    }
+
+    @RequestMapping(value = "/delete")
+    public String delete(ArticleBO articleBO){
+        articleService.delete(articleBO.getId());
+        return "forward: /article/query.htm";
     }
 }

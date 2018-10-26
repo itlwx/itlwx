@@ -379,4 +379,62 @@
       category_id = #{categoryId,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
+<!--==================================================================================================================-->
+  <!--结果映射-->
+  <resultMap id="DataResultMap" type="com.itlwx.core.bean.Article" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="intro" property="intro" jdbcType="VARCHAR" />
+    <result column="authro_id" property="authroId" jdbcType="INTEGER" />
+    <result column="hits" property="hits" jdbcType="INTEGER" />
+    <result column="post_num" property="postNum" jdbcType="INTEGER" />
+    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="post_time" property="postTime" jdbcType="TIMESTAMP" />
+    <result column="category_id" property="categoryId" jdbcType="INTEGER" />
+    <result column="category_name" property="categoryName" jdbcType="VARCHAR" />
+    <result column="authro_alias" property="authroAlias" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <!--过滤条件-->
+  <sql id="Data_Where_Clause" >
+    <where>
+          ta.deleted = 1
+      <if test="title != null and title != ''" >
+           and ta.title = #{title}
+      </if>
+
+      <if test="createTime != null" >
+          and ta.create_tiem >= #{createTime}
+      </if>
+
+      <if test="categoryId != null" >
+        and ta.category_id = #{categoryId}
+      </if>
+    </where>
+  </sql>
+
+  <!--关联的表-->
+  <sql id="Data_Relevance_List">
+	t_article ta JOIN t_category tc ON (ta.category_id = tc.id) JOIN t_user tu ON (ta.authro_id = tu.id)
+  </sql>
+
+  <!--查询语句主体-->
+  <select id="query" parameterType="com.itlwx.core.bo.ArticleQueryBO" resultMap="DataResultMap">
+    SELECT ta.*,tc.name as category_name,tu.alias as authro_alias
+    FROM <include refid="Data_Relevance_List" />
+    <include refid="Data_Where_Clause" />
+    <if test="limitStart != null and limitStart>=0">limit #{limitStart}
+      , #{limitEnd}
+    </if>
+  </select>
+
+  <!--查询总记录数-->
+  <select id="count4Query" parameterType="com.itlwx.core.bo.ArticleQueryBO"
+          resultType="java.lang.Integer">
+    SELECT count(*)
+	FROM  <include refid="Data_Relevance_List" />
+    <include refid="Data_Where_Clause" />
+  </select>
 </mapper>

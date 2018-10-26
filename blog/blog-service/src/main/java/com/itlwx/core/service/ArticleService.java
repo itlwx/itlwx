@@ -32,4 +32,11 @@ public interface ArticleService {
      * @return
      */
     PageSet<ArticleBO> query(ArticleQueryBO queryBO);
+
+    /**
+     * 根据id获取记录
+     * @param id
+     * @return
+     */
+    ArticleBO getById(Integer id) throws ArticleException;
 }

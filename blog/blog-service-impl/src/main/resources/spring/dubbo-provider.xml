@@ -14,5 +14,6 @@
 
  	<dubbo:service id="categoryService" interface="com.itlwx.core.service.CategoryService" ref="categoryServiceImpl" timeout="20000"/>
 	<dubbo:service id="userService" interface="com.itlwx.core.service.UserService" ref="userServiceImpl" timeout="20000"/>
+	<dubbo:service id="articleService" interface="com.itlwx.core.service.ArticleService" ref="articleServiceImpl" timeout="20000"/>
 
 </beans>

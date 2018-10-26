@@ -26,7 +26,7 @@ public interface CategoryService {
      * 根据id删除类别
      * @param id
      */
-    void deleteByID(Integer id);
+    void deleteByID(Integer id) throws CategoryException;
 
     /**
      * 根据id获取

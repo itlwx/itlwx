@@ -3,6 +3,8 @@ package com.itlwx.core.mapper;
 import com.itlwx.core.bean.Article;
 import com.itlwx.core.bean.ArticleExample;
 import java.util.List;
+
+import com.itlwx.core.bo.ArticleQueryBO;
 import org.apache.ibatis.annotations.Param;
 
 public interface ArticleMapper {
@@ -33,4 +35,8 @@ public interface ArticleMapper {
     int updateByPrimaryKeyWithBLOBs(Article record);
 
     int updateByPrimaryKey(Article record);
+
+    int count4Query(ArticleQueryBO queryBO);
+
+    List<Article> query(ArticleQueryBO queryBO);
 }

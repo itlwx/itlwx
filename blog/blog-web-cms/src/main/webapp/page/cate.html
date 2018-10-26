@@ -45,7 +45,7 @@
         <td>$!item.remark</td>
         <td><div class="button-group">
           <a class="button border-main" href="javascript:void(0)" onclick="javascript:window.location.href='$rc.contextPath/category/showedit.htm?id=$item.id';"><span class="icon-edit"></span> 修改</a>
-          <a class="button border-red" href="javascript:void(0)" onclick="return catedel('$rc.contextPath/category/catedel.htm?id=$item.id')"><span class="icon-trash-o"></span> 删除</a> </div></td>
+          <a class="button border-red" href="javascript:void(0)" onclick="return kill('$rc.contextPath/category/catedel.htm?id=$item.id','$rc.contextPath/category/query.htm','notice','notice_faild')"><span class="icon-trash-o"></span> 删除</a> </div></td>
       </tr>
     #end
 
@@ -53,17 +53,20 @@
       #set($perPage = $!ps.currentPage - 1)
       #set($nextPage = $!ps.currentPage + 1)
       #if($nextPage > $ps.getCountPage()) #set($nextPage = $!ps.currentPage) #end
-      <td colspan="8"><div class="pagelist"> <a href="$rc.contextPath/category/query.htm?currentPage=$!perPage">上一页</a> <span class="current">$!ps.currentPage</span><a href="$rc.contextPath/category/query.htm?currentPage=$!nextPage">下一页</a><a href="$rc.contextPath/category/query.htm?currentPage=$!ps.getCountPage()">尾页</a> </div></td>
+      <td colspan="8">
+        <div class="pagelist">
+          <a href="$rc.contextPath/category/query.htm?currentPage=$!perPage">上一页</a> <span class="current">$!ps.currentPage</span>
+          <a href="$rc.contextPath/category/query.htm?currentPage=$!nextPage">下一页</a>
+          <a href="$rc.contextPath/category/query.htm?currentPage=$!ps.getCountPage()">尾页</a>
+
+        </div>
+        <span id="notice" style="display: block"></span>
+      </td>
     </tr>
   </table>
 </div>
 <script type="text/javascript">
-  function catedel(url){
-      if(confirm("您确定要删除吗?")){
-          window.location.href = url;
-      }
-      return false;
-  }
+
 </script>
 </body>
 </html>

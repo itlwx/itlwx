@@ -3,11 +3,14 @@ package com.itlwx.core.service.impl;
 import com.itlwx.common.exception.CategoryException;
 import com.itlwx.common.exception.ErrorCode;
 import com.itlwx.common.utils.MapperUtil;
+import com.itlwx.core.bean.Article;
+import com.itlwx.core.bean.ArticleExample;
 import com.itlwx.core.bean.Category;
 import com.itlwx.core.bean.CategoryExample;
 import com.itlwx.core.bo.CategoryBO;
 import com.itlwx.core.bo.CategoryQueryBO;
 import com.itlwx.core.bo.PageSet;
+import com.itlwx.core.mapper.ArticleMapper;
 import com.itlwx.core.mapper.CategoryMapper;
 import com.itlwx.core.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,23 +25,22 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private CategoryMapper categoryMapper;
+    @Autowired
+    private ArticleMapper articleMapper;
 
     @Override
     public void add(CategoryBO categoryBO) throws CategoryException{
         //根据类别名称与类别类型查询记录
         CategoryExample example = new CategoryExample();
-        CategoryExample.Criteria criteria = example.createCriteria();
-        criteria.andTypeEqualTo(categoryBO.getType());
-        criteria.andNameEqualTo(categoryBO.getName());
+        example.createCriteria()
+            .andTypeEqualTo(categoryBO.getType())
+            .andNameEqualTo(categoryBO.getName());
 
         List<Category> categories = categoryMapper.selectByExample(example);
 
         if(categories != null && categories.size() > 0){
-            Category category = categories.get(0);
-            if (!category.getId().equals(categoryBO.getId())) {
-                //若同类型下有相同的类别，抛出异常
-                throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST);
-            }
+           //若同类型下有相同的类别，抛出异常
+           throw new CategoryException(ErrorCode.PUBLIC_RECORED_EXIST);
         }
 
         Category category = MapperUtil.map(categoryBO, Category.class);
@@ -48,7 +50,18 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public void deleteByID(Integer id) {
+    public void deleteByID(Integer id) throws CategoryException{
+        ArticleExample example = new ArticleExample();
+        example.createCriteria()
+                .andCategoryIdEqualTo(id)
+                .andDeletedEqualTo(1);
+
+        List<Article> articles = articleMapper.selectByExample(example);
+
+        if (articles != null && articles.size() > 0) {
+            throw new CategoryException(ErrorCode.CATEGORY_NOT_DELETE);
+        }
+
         categoryMapper.deleteByPrimaryKey(id);
     }
 

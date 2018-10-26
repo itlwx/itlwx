@@ -27,6 +27,26 @@ public class Article {
 
     private String content;
 
+    private String categoryName;
+
+    private String authroAlias;
+
+    public String getAuthroAlias() {
+        return authroAlias;
+    }
+
+    public void setAuthroAlias(String authroAlias) {
+        this.authroAlias = authroAlias;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
     public Integer getId() {
         return id;
     }

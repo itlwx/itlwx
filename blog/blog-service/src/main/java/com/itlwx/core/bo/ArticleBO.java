@@ -1,11 +1,15 @@
 package com.itlwx.core.bo;
 
+import com.itlwx.common.valid.GroupGeneral;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Null;
+import java.io.Serializable;
 import java.util.Date;
 
-public class ArticleBO {
+public class ArticleBO implements Serializable {
+    @NotNull(groups = GroupGeneral.class)
     private Integer id;
 
     @NotEmpty
@@ -27,11 +31,32 @@ public class ArticleBO {
 
     private Date postTime;
 
-    @NotEmpty
+    @NotNull
     private Integer categoryId;
 
     @NotEmpty
     private String content;
+
+    private String categoryName;
+
+    private String authroAlias;
+
+    public String getAuthroAlias() {
+        return authroAlias;
+    }
+
+    public void setAuthroAlias(String authroAlias) {
+        this.authroAlias = authroAlias;
+    }
+
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
 
     public Integer getId() {
         return id;

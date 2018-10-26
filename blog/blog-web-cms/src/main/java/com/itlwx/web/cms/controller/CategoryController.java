@@ -82,7 +82,7 @@ public class CategoryController extends BaseController{
      * @return
      */
     @RequestMapping(value = "/catedel")
-    public String catedel(CategoryBO categoryBO){
+    public String catedel(CategoryBO categoryBO) throws CategoryException {
         categoryService.deleteByID(categoryBO.getId());
         return "forward:/category/query.htm";
     }
