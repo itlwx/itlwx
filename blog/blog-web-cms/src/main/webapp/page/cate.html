@@ -53,14 +53,13 @@
       #set($perPage = $!ps.currentPage - 1)
       #set($nextPage = $!ps.currentPage + 1)
       #if($nextPage > $ps.getCountPage()) #set($nextPage = $!ps.currentPage) #end
-      <td colspan="8">
+      <td colspan="7">
         <div class="pagelist">
           <a href="$rc.contextPath/category/query.htm?currentPage=$!perPage">上一页</a> <span class="current">$!ps.currentPage</span>
           <a href="$rc.contextPath/category/query.htm?currentPage=$!nextPage">下一页</a>
           <a href="$rc.contextPath/category/query.htm?currentPage=$!ps.getCountPage()">尾页</a>
-
+          <span id="notice" style="border: 0px"></span>
         </div>
-        <span id="notice" style="display: block"></span>
       </td>
     </tr>
   </table>

@@ -94,6 +94,8 @@ $(".single .content img").lazyload({
     effect: "fadeIn"
 });
 $('[data-toggle="tooltip"]').tooltip();
+
+
 jQuery.ias({
     history: false,
     container: '.content',
@@ -116,6 +118,8 @@ jQuery.ias({
         $('.excerpt a').attr('draggable', 'false')
     }
 });
+
+
 $(window).scroll(function () {
     var sidebar = $('.sidebar');
     var sidebarHeight = sidebar.height();

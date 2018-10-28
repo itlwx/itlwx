@@ -35,6 +35,7 @@
 		<property name="suffix" value=".html"/>
 		<property name="contentType" value="text/html;charset=utf-8"/>
 		<property name="requestContextAttribute" value="rc"/>
+		<property name="dateToolAttribute" value="date"/>
 		<!--自定义工具-->
 		<!--<property name="toolboxConfigLocation" value="WEB-INF/common/velotity-tools.xml"/>-->
 	</bean>
@@ -62,7 +63,7 @@
 	</bean>
 
 	<!-- 引用dubbo服务 -->
-	<!--<dubbo:application name="e3-manager-web"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.25.160:2181"/>	
-	<dubbo:reference interface="cn.e3mall.service.ItemService" id="itemService" />-->
+	<dubbo:application name="blog-web-portal"/>
+	<dubbo:registry address="zookeeper://127.0.0.1:2181" />
+	<import resource="dubbo-customer.xml"/>
 </beans>

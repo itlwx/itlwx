@@ -32,7 +32,6 @@ public class CategoryController extends BaseController{
         PageSet<CategoryBO> pageSet = categoryService.query(queryBO);
         mav.setViewName("cate");
         mav.addObject("ps",pageSet);
-
         return mav;
     }
 
@@ -82,9 +81,10 @@ public class CategoryController extends BaseController{
      * @return
      */
     @RequestMapping(value = "/catedel")
-    public String catedel(CategoryBO categoryBO) throws CategoryException {
+    public ModelAndView catedel(CategoryBO categoryBO) throws CategoryException {
         categoryService.deleteByID(categoryBO.getId());
-        return "forward:/category/query.htm";
+        HttpResult.toSuccess(getResponse());
+        return null;
     }
 
 }

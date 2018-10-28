@@ -79,8 +79,9 @@ public class ArticleController extends BaseController {
     }
 
     @RequestMapping(value = "/delete")
-    public String delete(ArticleBO articleBO){
+    public ModelAndView delete(ArticleBO articleBO){
         articleService.delete(articleBO.getId());
-        return "forward: /article/query.htm";
+        HttpResult.toSuccess(getResponse());
+        return null;
     }
 }

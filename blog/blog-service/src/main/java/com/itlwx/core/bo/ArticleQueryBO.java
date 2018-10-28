@@ -8,6 +8,11 @@ public class ArticleQueryBO extends Pageable{
     private Date createTime;
     private Integer categoryId;
 
+    public ArticleQueryBO(){
+        super();
+        setPageOfSize(5);
+    }
+
     public String getTitle() {
         return title;
     }

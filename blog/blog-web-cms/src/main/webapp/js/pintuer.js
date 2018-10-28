@@ -548,9 +548,11 @@ function kill(url,openUrl,noticeId,className){
                 if(data.code == 1000200){
                     window.location.href = openUrl;
                 }else{
-                    $("#"+noticeId).addClass(className);
-                    $("#"+noticeId).text(data.msg);
-                    window.setTimeout(function(){cleanNotice(noticeId)},5000);
+                	if(noticeId){
+                        $("#"+noticeId).addClass(className);
+                        $("#"+noticeId).text(data.msg);
+                        window.setTimeout(function(){cleanNotice(noticeId)},5000);
+					}
                 }
             }
 		});
